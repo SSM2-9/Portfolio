@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakina Shaikh Mohammed | Programmer & Researcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f5;--surface:#fff;--ink:#1c1b22;--muted:#63616d;--line:#e6e2da;--accent:#5b4bdb;--accent-soft:#ece9ff;--warm:#e9825a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121217;--surface:#1b1b23;--ink:#f1eff6;--muted:#a3a0b2;--line:#2b2a36;--accent:#a99cff;--accent-soft:#272444;--warm:#f09a77;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121217;--surface:#1b1b23;--ink:#f1eff6;--muted:#a3a0b2;--line:#2b2a36;--accent:#a99cff;--accent-soft:#272444;--warm:#f09a77;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1040px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;gap:16px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.15rem}
+.logo span{color:var(--accent)}
+nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav a{padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--muted);white-space:nowrap;transition:.2s}
+nav a:hover{background:var(--accent-soft);color:var(--accent)}
+main{max-width:1040px;margin:auto;padding:0 22px}
+section{padding:72px 0 8px}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:28px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding-top:64px}
+.hero h1{font-size:clamp(2.5rem,7vw,4.2rem);letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.tag{font-size:1.1rem;color:var(--muted);margin:14px 0 18px}
+.lead{max-width:540px;color:var(--ink);opacity:.9}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{padding:12px 22px;border-radius:999px;font-weight:500;font-size:.95rem;border:1px solid var(--line);background:var(--surface);transition:.2s}
+.btn.p{background:var(--accent);color:#fff;border-color:var(--accent)}
+:root[data-theme="dark"] .btn.p{color:#15131f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#15131f}}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(91,75,219,.18)}
+.portrait{aspect-ratio:1;border-radius:36% 64% 58% 42%/46% 40% 60% 54%;background:linear-gradient(140deg,var(--accent),var(--warm));display:grid;place-items:center;max-width:320px;margin-left:auto;width:100%;box-shadow:0 24px 60px rgba(91,75,219,.25)}
+.portrait span{font-family:Fraunces,Georgia,serif;font-size:clamp(3.5rem,10vw,5.5rem);color:#fff;font-weight:600;letter-spacing:.02em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.stat b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.7rem;color:var(--accent)}
+.stat small{color:var(--muted);font-size:.85rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.about p{margin:0 0 14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.82rem;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08);border-color:var(--accent)}
+.card.big{grid-column:1/-1}
+.card h3{font-size:1.35rem}
+.meta{font-size:.82rem;color:var(--muted)}
+.badge{align-self:flex-start;font-size:.75rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--warm);color:#fff}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card .links{margin-top:auto;display:flex;gap:16px;font-size:.9rem;font-weight:500;color:var(--accent)}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.item{position:relative;padding:0 0 28px 28px}
+.item::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.item h3{font-size:1.15rem;font-family:Inter,system-ui,Arial,sans-serif;font-weight:600}
+.item p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.list li:last-child{border:0}
+.list small{display:block;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px 26px}
+.panel h3{font-size:1.2rem;margin-bottom:8px}
+.connect{margin:80px 0 0;text-align:center;background:linear-gradient(140deg,var(--accent),#7a5cf0 60%,var(--warm));color:#fff;border-radius:28px;padding:56px 24px}
+.connect h2{margin-bottom:10px;color:#fff}
+.connect p{margin:0 auto 26px;max-width:460px;opacity:.92}
+.connect .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.connect a{padding:11px 22px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);font-weight:500;transition:.2s}
+.connect a:hover{background:#fff;color:#4a3bc0}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:36px 0 40px}
+@media (max-width:760px){.hero,.about,.grid,.two{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.portrait{margin:0 auto;max-width:220px;order:-1}.hero{padding-top:40px}section{padding-top:56px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="#home">Sakina<span>.</span></a>
+<nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#more">More</a><a href="#connect">Contact</a><a href="https://drive.google.com/file/d/1WO1C8OSE3GYAwrwHWAPemfgAvCZ1-QOg/view?usp=sharing" target="_blank" rel="noopener">View CV ↗</a></nav></div></header>
+<main>
+<section id="home" class="hero" style="padding-bottom:0">
+<div>
+<h1>Hi, I’m <em>Sakina</em>.</h1>
+<p class="lead" style="margin-top:20px">I’m a first-year BSc Artificial Intelligence (Engineering) student at MBZUAI. I build AI tools for healthcare and sustainability, and I love turning data into something people can actually use.</p>
+</div>
+<div class="portrait" role="img" aria-label="Monogram SSM"><span>SSM</span></div>
+</section>
+
+<section id="about"><div class="eyebrow">About</div><h2>Building with AI, guided by research</h2>
+<div class="about">
+<div><p>I started coding in high school, founded my school’s AI Club and have been shipping projects ever since, from recipe generators and a multilingual Olympics assistant to tools that help seniors spot health misinformation.</p>
+<p>Now at MBZUAI, I’m studying Artificial Intelligence (Engineering) and always looking for hackathons, research and projects where I can turn ideas into tools that help people.</p></div>
+<div><p style="margin-bottom:10px">What I work with</p>
+<div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">scikit-learn</span><span class="chip">Streamlit</span><span class="chip">JavaScript</span><span class="chip">HTML &amp; CSS</span><span class="chip">SQLite</span><span class="chip">Tableau</span><span class="chip">Firebase</span><span class="chip">GitHub</span><span class="chip">Scientific writing</span></div></div>
+</div></section>
+
+<section id="projects"><div class="eyebrow">Projects</div><h2>Things I’ve built</h2>
+<div class="grid">
+<article class="card big"><span class="badge">NASA Space Apps 2026 · Results pending</span><h3>Sowlaris</h3><div class="meta">Oct 2026 · Python, Streamlit, scikit-learn</div>
+<p>A decision-support tool that recommends drought-aware crop rotations for a Kansas farm. It runs a daily soil-water model driven by NASA POWER and GPM IMERG data, scores rotations on six criteria, and validates against ECOSTRESS satellite data while openly reporting where the model disagrees. Backed by 162 automated tests.</p>
+<div class="links"><a href="https://sowlaris.streamlit.app/" target="_blank" rel="noopener">Live app ↗</a><a href="https://www.spaceappschallenge.org/2026/find-a-team/sowlaris/?tab=project" target="_blank" rel="noopener">Space Apps page ↗</a></div></article>
+<article class="card"><span class="badge">#11 on Product Hunt</span><h3>Elder Care Check</h3><div class="meta">Nov 2025 · AI app</div>
+<p>Helps seniors verify online health claims from a screenshot or pasted text. Supports 6 languages with a Read Aloud feature and a simple, senior-friendly interface.</p><div class="links"><a href="https://www.producthunt.com/products/elder-care-check" target="_blank" rel="noopener">Product Hunt ↗</a></div></article>
+<article class="card"><span class="badge">Global Nominee 2025</span><h3>Project Airflow</h3><div class="meta">Oct 2025 · NASA Space Apps</div>
+<p>A dashboard of real-time pollutant data (NO₂, CO) with guidance for sensitive groups and a TEMPO satellite forecast map. Top 1,290+ of 11,500+ submissions.</p><div class="links"><a href="https://www.spaceappschallenge.org/2025/find-a-team/airflow/?tab=project" target="_blank" rel="noopener">Space Apps page ↗</a></div></article>
+<article class="card"><h3>The Birth Gap</h3><div class="meta">Jul 2025 · Kode With Klossy · Tableau</div>
+<p>A data project on how geography, gender inequality and access to education and healthcare decide whether a woman survives childbirth, and why these deaths are preventable.</p><div class="links"><a href="https://public.tableau.com/app/profile/group.c3.ds.2025.3.1/viz/CAPSTONEPROJECT_17538015048050/Dashboard1" target="_blank" rel="noopener">Tableau dashboard ↗</a></div></article>
+<article class="card"><h3>Headstarter AI Projects</h3><div class="meta">Jul–Sep 2024 · Firebase</div>
+<p>Five AI projects built with a team and industry mentors, including FoodFusion (pantry-based recipe generator) and a multilingual customer support assistant for the Paris Olympics.</p><div class="links" style="flex-wrap:wrap"><a href="https://food-fusion-cckg.vercel.app/" target="_blank" rel="noopener">FoodFusion ↗</a><a href="https://aicustomersupport-omega.vercel.app/" target="_blank" rel="noopener">Olympics assistant ↗</a><a href="https://stock-your-shelves-wdtx-git-main-ss-projects-9d98fb33.vercel.app/" target="_blank" rel="noopener">Stock Your Shelves ↗</a></div></article>
+</div></section>
+
+<section id="experience"><div class="eyebrow">Experience</div><h2>Research, programs &amp; writing</h2>
+<div class="tl">
+<div class="item"><h3>Catalyst Scholar · Clematis Research Empowerment Hub</h3><div class="meta">Oct 2025 – Present</div><p>Selected as a Semi-Finalist and developing a research project with mentor feedback.</p></div>
+<div class="item"><h3>AI &amp; ML Scholar · Kode With Klossy</h3><div class="meta">Jul 2026</div><p>Completed an intensive AI and machine learning summer program and built a project with the cohort.</p></div>
+<div class="item"><h3>Data Science Scholar · Kode With Klossy</h3><div class="meta">Jul 2025</div><p>Scholarship to a two-week intensive. Learned SQLite and built Tableau Public dashboards on maternal mortality.</p></div>
+<div class="item"><h3>Young Reviewer · Frontiers for Young Minds</h3><div class="meta">Jun 2024 – Feb 2025</div><p>Reviewed four science articles under a mentor so young readers of all ages can understand them.</p></div>
+<div class="item"><h3>Researcher &amp; Writer · STEM Today</h3><div class="meta">Mar – Sep 2024</div><p>Researched and authored 7+ articles on emerging STEM topics.</p></div>
+<div class="item"><h3>Podcasting Team · Project CLERIS</h3><div class="meta">May – Sep 2024</div><p>Researched and scripted content for The Wellness Lab podcast.</p></div>
+</div></section>
+
+<section id="more"><div class="eyebrow">More</div><h2>Awards, certifications &amp; activities</h2>
+<div class="two">
+<div class="panel"><h3>Awards</h3><ul class="list">
+<li>Delegate’s Award &amp; World Changer nomination<small>Change the World MUN, 2026 · Finland in UNEP</small></li>
+<li>Global Nominee<small>NASA Space Apps Challenge, 2025</small></li>
+<li>Acely Scholarship Recipient<small>2025</small></li>
+<li>Mathematics Achievement<small>2024</small></li>
+<li>Academic Excellence Recognition<small>2022–2025</small></li></ul></div>
+<div class="panel"><h3>Certifications</h3><ul class="list">
+<li>One Million Prompters<small>Dubai Future Foundation · Oct 2025</small></li>
+<li>Data Science Camp<small>Kode With Klossy · Aug 2025</small></li>
+<li>Cybersecurity Initiative (Be Safe)<small>Prince Sattam Bin Abdulaziz University · Dec 2024</small></li>
+<li>Excellence in AI<small>SDAIA &amp; Ministry of Education · Dec 2023</small></li>
+<li>Responsive Web Design<small>freeCodeCamp · Nov 2023</small></li></ul></div>
+<div class="panel"><h3>Campus &amp; leadership</h3><ul class="list">
+<li>Research Showcase Volunteer<small>MBZUAI · 2026</small></li>
+<li>Member<small>Entrepreneurship Club, Shuttle Shock Badminton, WeStem@MBZUAI</small></li>
+<li>Founder, AI Club<small>Al Mutawiroon International School · 2023–2024</small></li>
+<li>Student Council Representative<small>2024–2025</small></li></ul></div>
+<div class="panel"><h3>Education</h3><ul class="list">
+<li>BSc Artificial Intelligence (Engineering)<small>MBZUAI · Aug 2026 – Present</small></li>
+<li>High School Diploma, 100%<small>Al Mutawiroon International School · 2022–2026</small></li>
+<li>SAT 1540 · IELTS Academic 8.0</li></ul></div>
+</div></section>
+
+<section id="connect" class="connect" style="padding:56px 24px"><h2>Let’s connect!</h2><p>Interested in research, hackathons or building something together? I’d love to hear from you.</p>
+<div class="row"><a href="https://www.linkedin.com/in/sakina-shaikh-mohammed/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/SSM2-9" target="_blank" rel="noopener">GitHub</a><a href="https://www.instagram.com/studybuddy.code/" target="_blank" rel="noopener">Instagram</a><a href="mailto:ssmsakina@gmail.com">Email</a></div></section>
+</main>
+<footer>© 2026 Sakina Shaikh Mohammed. All rights reserved.</footer>
+</body>
+</html>
